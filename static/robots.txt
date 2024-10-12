@@ -1,0 +1,6 @@
+# Algolia-Crawler-Verif: D4A0DFD9A4E01CE3
+
+User-agent: *
+Allow: /
+Sitemap: https://tiptap.site/sitemap.xml
+
