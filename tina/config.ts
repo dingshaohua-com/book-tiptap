@@ -19,11 +19,12 @@ export default defineConfig({
         path: "docs", // Docusaurus docs/ 文件夹
         format: "mdx", // 支持 MDX（Docusaurus 原生）
         fields: [
-          { type: "string", name: "title", label: "Title", isTitle: true },
+          { type: "string", name: "title", label: "Title", isTitle: true, required: true },
           {
             type: "rich-text",
             name: "body",
             label: "Body",
+            isBody: true,
             templates: [
               // Docusaurus 常用块：代码/图片/警报
               {
