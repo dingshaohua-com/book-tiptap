@@ -5,7 +5,7 @@ export default defineConfig({
   // clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!, // Tina Cloud 获取（免费注册）
   // token: process.env.TINA_TOKEN!,
   clientId: 'b6aacb76-170e-4eb1-a9af-40835c7516c2',
-  token: '6e02f4b1cb30fc2dcf67f3e9c92548b930536f2e',
+  token: 'd53fe7f5221f9851adb99e34a6777582bb6da192',
   build: {
     outputFolder: "admin", // 生成 Docusaurus /admin 页面
     publicFolder: "static",
