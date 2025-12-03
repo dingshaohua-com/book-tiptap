@@ -10,7 +10,7 @@ export default defineConfig({
     outputFolder: "admin", // 生成 Docusaurus /admin 页面
     publicFolder: "static",
   },
-  media: { tina: { publicFolder: "public", mediaRoot: "public" } },
+  media: { tina: { publicFolder: "static", mediaRoot: "static" } },
   schema: {
     collections: [
       {
@@ -38,6 +38,23 @@ export default defineConfig({
                 fields: [{ type: "string", name: "language" }],
               },
             ],
+          },
+          { type: "image", name: "heroImage", label: "Hero Image" },
+        ],
+      },
+      // 新增：纯 Markdown 集合
+      {
+        label: "MD Docs", // 显示在 Tina Studio 侧边栏
+        name: "md_docs", // 唯一名称
+        path: "docs", // 同一文件夹（Tina 会基于扩展名区分）
+        format: "md", // 只针对 .md 文件
+        fields: [
+          { type: "string", name: "title", label: "Title", isTitle: true, required: true },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
           },
           { type: "image", name: "heroImage", label: "Hero Image" },
         ],
